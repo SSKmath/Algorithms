@@ -9,7 +9,7 @@ vector<int> mergeSortHelper(const vector<int>& V, int start, int end)
         return {V[start]};    
     
     int mid = start + (end - start) / 2;
-    vector<int> v1 = mergeSortHelper(V, start, mid), 
+    vector<int> v1 = mergeSortHelper(V, start, mid);
     vector<int> v2 = mergeSortHelper(V, mid + 1, end);
 
     vector<int> rez(v1.size() + v2.size());
